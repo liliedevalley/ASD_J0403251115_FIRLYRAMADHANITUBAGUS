@@ -36,3 +36,22 @@ def baca_stok(nama_file):
 #------------------
 def tampilkan_semua(stok_dict):
     """Menampilkan semua barang yang ada di stok_dict"""
+    #membuat header tabel
+    print("\n=== DAFTAR STOK BARANG LISHOP ===")
+    with open(nama_file, "r", encoding="utf-8") as file:
+        isi = file.read() #mengecek apakah file stok ada isi
+        if not isi:
+            print("Tidak ada barang stok!")
+        else:
+            print(f"| {"Kode Barang" : <12} | {"Nama Barang" : <12} | {"Stok" : >5} |")
+            print("-" * 39)
+            #menampilkan isi data stok barang
+            for KodeBarang in sorted(stok_dict.keys()):
+                NamaBarang = stok_dict[KodeBarang]["Nama Barang"]
+                Stok = stok_dict[KodeBarang]["Stok Barang"]
+                print(F"| {KodeBarang:<12} | {NamaBarang:<12} | {int(Stok):>5} |")
+            print("-" *39)
+
+#buka_data = baca_stok(nama_file)
+#tampilkan_semua(buka_data) #menampilkan data
+
