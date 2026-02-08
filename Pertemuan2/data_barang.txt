@@ -1,0 +1,16 @@
+B0001,   Anggur, 8
+B0002,   Apel, 14
+B0003,   Nanas, 5
+B0004,   Pir, 10
+B0005,   Mangga, 25
+B0006,   Jeruk, 32
+B0007,   Stroberi, 16
+B0008,   Alpukat, 9
+B0009,   Lemon, 10
+B0010,   Semangka, 3
+B0011,   Pisang, 11
+B0012,   Manggis, 13
+B0013,   Melon, 7
+B0014,   Pepaya, 6
+B0015,   Jambu, 9
+B0016,  Belimbing, 6
