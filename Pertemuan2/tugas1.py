@@ -6,6 +6,8 @@
 # NIM : J0403251115
 # Kelas : A1
 # ==========================================================
+# ibu maaf saya menyimpan data barang txt nya di luar folder pertemuan2
+# karena jika file data nya ada di folder pertemuan2 itu tidak terbaca dari vscode saya
 
 #------------------
 #variabel nama file
