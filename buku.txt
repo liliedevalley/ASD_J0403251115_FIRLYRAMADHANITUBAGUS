@@ -1,0 +1,10 @@
+0001B, Belajar Membaca, 10000
+0002B, Panduan Memasak, 15000
+0003B, Coding untuk Anak 5 Tahun, 50000
+0004B, Lancar Mengaji, 10000
+0005B, Komik Si Juki, 19000
+0006B, Detektif Conan Edisi Spesial, 66000
+0007B, Mahir Python, 31000
+0008B, Dongeng Kancil, 20000
+0009B, Sangkuriang, 9000
+0010B, C++ for Kids, 67000

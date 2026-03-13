@@ -1,38 +1,12 @@
-# ==========================================================
-# Pertemuan 6
-#
-# Nama : Firly Ramadhani Tubagus
-# NIM : J0403251115
-# Kelas : A1
-# ==========================================================
-
-#===========================================================
-# Latihan
-#===========================================================
-
-
-#Menggunakan BubbleSort
-def shortBubblesort(alist):
-    exchanges = True
-    passnum = len(alist)-1
-    while passnum > 0 and exchanges:
-        exchanges = False
+def bubblesort_asc(data):
+    for passnum in range(len(data)-1,0,-1):
         for i in range(passnum):
-            if alist[i]<alist[i+1]:
-                exchanges = True
-                temp = alist[i]
-                alist[i] = alist[i+1]
-                alist[i+1] = temp
-    passnum = passnum-1
-    return alist
+            if data[i]>data[i+1]:
+                #Tukar dua data bersebelahan yang urutannya salah
+                temp = data[i]
+                data[i] = data[i+1]
+                data[i+1] = temp 
 
-datahasil = [43,76,12,89,33,57,98,22,68,9]
-#print(datahasil)
-
-#1. Top 5 kandidat yang paling tinggi
-top5 = shortBubblesort(datahasil)
-print(f"Top 5 : {top5[:5]}")
-
-#2. Kandidat berapa saja yang lolos
-datahasil = [43,76,12,89,33,57,98,22,68,9]
-print(f"Kandidat yang lolos adalah: \n Kandidat {datahasil.index(98)} dengan nilai {datahasil[6]} \n Kandidat {datahasil.index(89)} dengan nilai {datahasil[3]} \n Kandidat {datahasil.index(76)} dengan nilai {datahasil[1]} \n Kandidat {datahasil.index(68)} dengan nilai {datahasil[8]} \n Kandidat {datahasil.index(57)} dengan nilai {datahasil[5]}")
+data = [17,9,72,119,29]
+bubblesort_asc(data)
+print(data)
