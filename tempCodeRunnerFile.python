@@ -1,12 +1,42 @@
-def bubblesort_asc(data):
-    for passnum in range(len(data)-1,0,-1):
-        for i in range(passnum):
-            if data[i]>data[i+1]:
-                #Tukar dua data bersebelahan yang urutannya salah
-                temp = data[i]
-                data[i] = data[i+1]
-                data[i+1] = temp 
+def createGraph(edges):
+    adj={}
 
-data = [17,9,72,119,29]
-bubblesort_asc(data)
-print(data)
+    #menambahkan edge ke adjacency listnya
+    for it in edges:
+        u=it[0]
+        v=it[1]
+
+        #kalau node belum ada
+        if u not in adj:
+            adj[u]=[]
+        
+        if v not in adj:
+            adj[v]=[]
+
+        #tambahkan edge    
+        adj[u].append(v)
+
+        #karena graphnya tidak berarah
+        adj[v].append(u)
+    return adj
+
+if __name__=="__main__":
+
+    #list edges nya
+    matrix = [
+ [0,1,1,0],
+ [1,0,1,0],
+ [1,1,0,1],
+ [0,0,1,0]
+]
+
+    #membuat graph menggunakan edgesnya
+    adj = createGraph(matrix)
+
+    #memanggil
+    print("Adjacency List:")
+    for node in adj:
+        print(f"{node}:", end=" ")
+        for j in adj[node]:
+            print(j, end=" ")
+        print()
